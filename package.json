@@ -1,5 +1,5 @@
 {
-  "name": "magic-cursor",
+  "name": "enchanted-cursor",
   "version": "0.0.1",
   "description": "A custom cursor package for React and NextJS",
   "main": "dist/index.js",
@@ -21,7 +21,7 @@
     "react",
     "nextjs"
   ],
-  "author": "briyadi",
+  "author": "bayuslari",
   "license": "MIT",
   "dependencies": {
     "react": "^18.3.1",
