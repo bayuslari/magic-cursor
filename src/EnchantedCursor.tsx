@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./styles.css";
 
-const EnchantedCursor = () => {
+const EnchantedCursor: React.FC = () => {
   useEffect(() => {
     const enchantedCursorOne = document.querySelector(
       ".enchanted-cursor-one"
