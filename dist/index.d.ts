@@ -1,1 +1,5 @@
-export { default as MagicCursor } from "./MagicCursor";
+import React from 'react';
+
+declare const MagicCursor: () => React.JSX.Element;
+
+export { MagicCursor };
