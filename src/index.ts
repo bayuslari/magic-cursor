@@ -1,1 +1,1 @@
-export { default as MagicCursor } from "./MagicCursor";
+export { default as EnchantedCursor } from "./EnchantedCursor";

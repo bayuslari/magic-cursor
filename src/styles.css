@@ -2,8 +2,8 @@
   --green: 227, 255, 0;
 }
 
-.magic-cursor-one,
-.magic-cursor-two {
+.enchanted-cursor-one,
+.enchanted-cursor-two {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -16,24 +16,26 @@
   pointer-events: none;
   backface-visibility: hidden;
   will-change: transform;
-  transition: transform 0.1s linear, opacity 0.3s ease;
+  transition:
+    transform 0.1s linear,
+    opacity 0.3s ease;
 }
 
-.magic-cursor-one {
+.enchanted-cursor-one {
   mix-blend-mode: darken;
 }
 
-.magic-cursor-two {
+.enchanted-cursor-two {
   mix-blend-mode: difference;
 }
 
-.magic-cursor-one.hover,
-.magic-cursor-two.hover {
+.enchanted-cursor-one.hover,
+.enchanted-cursor-two.hover {
   background-color: rgba(var(--green), 1);
   transform: translate(-50%, -50%) scale(1);
 }
 
-.magic-cursor-label {
+.enchanted-cursor-label {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -48,17 +50,17 @@
   color: #000000;
 }
 
-.magic-cursor-one.hover .magic-cursor-label,
-.magic-cursor-two.hover .magic-cursor-label {
+.enchanted-cursor-one.hover .enchanted-cursor-label,
+.enchanted-cursor-two.hover .enchanted-cursor-label {
   opacity: 1;
 }
 
-.magic-cursor-one.document-out,
-.magic-cursor-two.document-out {
+.enchanted-cursor-one.document-out,
+.enchanted-cursor-two.document-out {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.2);
 }
 
-.has-magic-cursor-label {
+.has-enchanted-cursor-label {
   mix-blend-mode: unset;
 }
