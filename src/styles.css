@@ -1,0 +1,64 @@
+:root {
+  --green: 227, 255, 0;
+}
+
+.magic-cursor-one,
+.magic-cursor-two {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.2);
+  transition: transform 0.1s ease-in-out;
+  background-color: rgba(var(--green));
+  perspective: 1000px;
+  pointer-events: none;
+  backface-visibility: hidden;
+  will-change: transform;
+  transition: transform 0.1s linear, opacity 0.3s ease;
+}
+
+.magic-cursor-one {
+  mix-blend-mode: darken;
+}
+
+.magic-cursor-two {
+  mix-blend-mode: difference;
+}
+
+.magic-cursor-one.hover,
+.magic-cursor-two.hover {
+  background-color: rgba(var(--green), 1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.magic-cursor-label {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+  z-index: 100;
+  color: #000000;
+}
+
+.magic-cursor-one.hover .magic-cursor-label,
+.magic-cursor-two.hover .magic-cursor-label {
+  opacity: 1;
+}
+
+.magic-cursor-one.document-out,
+.magic-cursor-two.document-out {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.2);
+}
+
+.has-magic-cursor-label {
+  mix-blend-mode: unset;
+}
