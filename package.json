@@ -1,13 +1,13 @@
 {
   "name": "enchanted-cursor",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.1",
   "description": "A custom cursor package for React and NextJS",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "homepage": "https://google.com",
   "repository": {
-    "url": "https://github.com/bayuslari/magic-cursor"
+    "url": "https://github.com/bayuslari/enchanted-cursor"
   },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
