@@ -1,6 +1,6 @@
 {
   "name": "magic-cursor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A custom cursor package for React and NextJS",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
