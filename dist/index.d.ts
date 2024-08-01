@@ -1,5 +1,5 @@
 import React from 'react';
 
-declare const MagicCursor: () => React.JSX.Element;
+declare const EnchantedCursor: () => React.JSX.Element;
 
-export { MagicCursor };
+export { EnchantedCursor };
