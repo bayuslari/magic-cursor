@@ -1,6 +1,6 @@
 {
   "name": "enchanted-cursor",
-  "version": "0.0.1-alpha.21",
+  "version": "0.0.1-alpha.22",
   "description": "A custom cursor package for React and NextJS",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -9,6 +9,10 @@
   "repository": {
     "url": "https://github.com/bayuslari/enchanted-cursor"
   },
+  "files": [
+    "dist",
+    "src/styles.css"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc",
